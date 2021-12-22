@@ -1,6 +1,6 @@
 .App {
   height: 100vh;
-  background-color: #1a202c;
+  background-color: hsl(240, 5%, 5%);
   overflow: scroll;
   text-align: center;
 }
@@ -45,7 +45,7 @@
   width: auto;
   padding-left: 40px;
   padding-right: 40px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
@@ -87,9 +87,14 @@
   font-weight: bold;
 }
 
+.connected-container {
+	padding: 0 10%;
+}
+
 .gif-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1.5rem;
   justify-items: center;
   margin: 0;
@@ -106,25 +111,27 @@
 
 .gif-item img {
   width: 100%;
+  max-width: 400px;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
   object-fit: cover;
+  border: 1px solid #6a686f;
 }
 
 .connected-container input[type='text'] {
   display: inline-block;
   color: white;
-  padding: 10px;
+  padding: 5px 10px;
   width: 50%;
-  height: 60px;
+  height: 40px;
   font-size: 16px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.25);
-  border: none;
-  border-radius: 10px;
+  background-color: hsl(240, 5%, 20%);
+  border: 1px solid hsl(240, 5%, 25%);;
+  border-radius: 5px;
   margin: 50px auto;
 }
 
 .connected-container button {
-  height: 50px;
+  height: 40px;
 }
