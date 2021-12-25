@@ -178,7 +178,11 @@ const App = () => {
         // Otherwise, we're good! Account exists. User can submit GIFs.
         else {
             return (
-                <div className="connected-container">
+                <>
+				<p className="instructions-text">
+					Go to <a href={AFI_LINK} target="_blank">AFI's 100 Years... 100 Movies List</a> to find a favorite movie. Then find a GIF for your movie and submit the link to add to our collection!
+				</p>
+				<div className="connected-container">
                     <form
                         onSubmit={(event) => {
                             event.preventDefault();
@@ -208,6 +212,7 @@ const App = () => {
                         ))}
                     </div>
                 </div>
+				</>
             );
         }
     };
@@ -251,9 +256,6 @@ const App = () => {
                     <p className="sub-text">
                         The Metaverse ✨ goes to the movies... via GIFs!
                     </p>
-					<p className="instructions-text">
-						Go to <a href={AFI_LINK} target="_blank">AFI's 100 Years... 100 Movies List</a> to find a favorite movie. Then find a GIF for your movie and submit the link to add to our collection!
-					</p>
                     {/* Render your connect to wallet button right here */}
                     {!walletAddress && renderNotConnectedContainer()}
                     {walletAddress && renderConnectedContainer()}
