@@ -28,8 +28,27 @@
 }
 
 .sub-text {
-  font-size: 25px;
+  font-size: 30px;
   color: white;
+}
+
+.instructions-text {
+	font-size: 25px;
+	color: #eee;
+	max-width: 32rem;
+	margin: 1.2rem auto 0;
+	line-height: 32px;
+}
+
+.instructions-text a,
+.instructions-text a:visited  {
+	color: #7cf;
+	text-decoration: none;
+}
+
+.instructions-text a:hover {
+	color: #8df;
+	text-decoration: underline;
 }
 
 .gradient-text {
@@ -111,11 +130,18 @@
 
 .gif-item img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: 300px;
   border-radius: 5px;
   object-fit: cover;
   border: 1px solid #6a686f;
+}
+
+.gif-item .gif-user {
+	padding: 15px 2px 5px;
+	display: block;
+	font-size: 13px;
+	color: #ddd;
 }
 
 .connected-container input[type='text'] {
