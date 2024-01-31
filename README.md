@@ -16,7 +16,7 @@ We worked with the following "tools":
 ### URL for Project
 
 URL for the Solana GIF Portal:
-- [Solana GIF Portal - AFI 100 Years/Movies](https://afisolana.13z.dev)
+- [Solana GIF Portal - AFI 100 Years/Movies](https://solportal.13z.dev/)
 
 Code will be hosted at [Netlify](netlify)
 
