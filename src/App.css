@@ -85,19 +85,9 @@
 }
 
 .footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+  height: 30px;
   width: 100%;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 45px;
-}
-
-.twitter-logo {
-  width: 35px;
-  height: 35px;
+  padding-bottom: 5px;
 }
 
 .footer-text {
